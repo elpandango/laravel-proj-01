@@ -26,3 +26,5 @@ Route::get('/contact', function () {
 Route::get('/contact/{parameter}', function($parameter){
    return "{$parameter} page content";
 });
+
+Route::post('/contact/submit', 'MessagesController@submit');
